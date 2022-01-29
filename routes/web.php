@@ -35,10 +35,9 @@ Route::get('/sub/{num1}/{num2}', function ($num1, $num2) {
 Route::get('/div/{num1}/{num2}', function ($num1, $num2) {
     if($num2 == 0){
         logger()->error('Divisor zero!');
-    }
-    if($num2 == 0){
         return 'Divisor zero';
-    } else {
+    }
+     else {
         $div = $num1 / $num2;
         return $div;
     }
