@@ -38,6 +38,7 @@ Route::get('/div/{num1}/{num2}', function ($num1, $num2) {
         return 'Divisor zero';
     }
      else {
+        logger()->info('Div feita');
         $div = $num1 / $num2;
         return $div;
     }
