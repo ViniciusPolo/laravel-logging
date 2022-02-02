@@ -2,6 +2,8 @@
 
 namespace App\Services;
 
+use Throwable;
+
 class CalculadoraService
 {
     function sum (int $num1, int $num2)
