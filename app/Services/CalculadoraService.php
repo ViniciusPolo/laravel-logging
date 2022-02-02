@@ -9,6 +9,7 @@ class CalculadoraService
         try {
             $result = $num1 + $num2;
         } catch (\Throwable $th) {
+            logger()->error($th);
             return [
                 'success' => false,
                 'message' => 'Erro ao fazer soma'
