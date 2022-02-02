@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-class ClaculadoraService
+class CalculadoraService
 {
     function sum (int $num1, int $num2)
     {
